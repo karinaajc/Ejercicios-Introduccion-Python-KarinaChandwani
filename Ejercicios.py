@@ -40,3 +40,43 @@ def suma(a, b):
 
 
 print(suma(8, 12))
+
+
+#  Define una función que tome un número y retorne su factorial.
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+
+print(factorial(6))
+
+
+#  Define una función que tome un número y retorne su factorial.
+def es_primo(num):
+    if num < 2:
+        return False
+    for i in range(2, num):
+        if num % i == 0:
+            return False
+    return True
+
+
+print(es_primo(10))
+
+
+# Define una función que reciba una lista de números y retorne la suma de ellos
+def sumar_lista(lista):
+    return sum(lista)
+
+
+print(sumar_lista([1, 5, 4, 6, 9, 100]))
+
+
+# Defina una función que reciba una cadena de texto y retorne la cadena en reversa
+def reversa(cadena):
+    return cadena[::-1]
+
+
+print(reversa("Karina"))
