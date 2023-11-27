@@ -80,3 +80,28 @@ def reversa(cadena):
 
 
 print(reversa("Karina"))
+
+
+# Crea una función para verificar si un número es par o impar y devuelve "El número es par" o "El numero es impar" según corresponda
+
+
+def es_par(numero):
+    return numero % 2 == 0
+
+
+if es_par(9):
+    print("Es un numero par.")
+else:
+    print("Es un numero impar.")
+
+
+# Crea una funcion a la que pases numeros como argumento, calcule el factorial de ese número y haga print del resultado
+def factorial(numero):
+    resultado = 1
+    for i in range(1, numero + 1):
+        resultado *= i
+    return
+
+
+num = int(input("3"))
+print("El factorial de 3 es:", factorial(3))
